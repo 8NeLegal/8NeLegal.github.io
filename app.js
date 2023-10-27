@@ -1,4 +1,14 @@
 let tg = window.Telegram.WebApp;
+let start = document.getElementById("start");
+let end = document.getElementById("end");
+
+start.addEventListener("click", () => {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("form_data").style.display = "display";
+});
+
+
+
 
 tg.expand();
 
