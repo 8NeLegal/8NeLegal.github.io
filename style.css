@@ -24,6 +24,31 @@ h3 {
 
 
 
+input {
+    width: 90%;
+    outline: none;
+    margin: 10px 5%;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+
+
+input:focus {
+    border-color: #db5d5d;
+}
+
+
+
+form_data {
+    display: none;
+    text-align: center;
+}
+
+
+
 .box {
 	max-width: 500px;
 }
