@@ -49,6 +49,13 @@ input:focus {
 
 
 
+#form_send {
+    display: none;
+    text-align: center;
+}
+
+
+
 .box {
 	max-width: 500px;
 }
