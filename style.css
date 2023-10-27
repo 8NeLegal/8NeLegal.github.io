@@ -103,6 +103,24 @@ input:focus {
 
 
 
+.green-btn {
+    margin: auto;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 40px;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 500ms ease;
+    cursor: pointer;
+    color: white;
+    background: #51a7e9;
+}
+
+
+
 .main {
      text-align: center;
 }
