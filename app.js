@@ -4,7 +4,7 @@ let end = document.getElementById("end");
 
 start.addEventListener("click", () => {
     document.getElementById("main").style.display = "none";
-    document.getElementById("form_data").style.display = "display";
+    document.getElementById("form_data").style.display = "block";
 });
 
 
