@@ -33,7 +33,7 @@ h3 {
 .inbox {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 380px 200px 200px;
+	grid-template-rows: 200px 200px 200px;
 }
 
 
