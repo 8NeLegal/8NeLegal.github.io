@@ -42,7 +42,7 @@ input:focus {
 
 
 
-form_data {
+#form_data {
     display: none;
     text-align: center;
 }
