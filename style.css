@@ -97,6 +97,7 @@ input:focus {
 
 
 .ititle {
+    max-width: 400px;
     text-align: center;
     color: var(--tg-theme-text-color);
 }
