@@ -41,6 +41,7 @@ input {
     border: 2px solid silver;
     border-radius: 7px;
     background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
 }
 
 
