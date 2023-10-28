@@ -53,7 +53,7 @@ input:focus {
 
 
 #form_data {
-    max-width: 370px;
+    max-width: 600px;
     display: none;
 }
 
@@ -178,6 +178,7 @@ input:focus {
 
 
 .ititle {
+    max-width: 390px;
     text-align: center;
 }
 
