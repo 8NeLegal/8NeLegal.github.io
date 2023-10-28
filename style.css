@@ -16,6 +16,14 @@ h1 {
 
 
 
+h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
 h3 {
     margin-top: 50px;
     margin-bottom: 10px;
@@ -43,6 +51,7 @@ input:focus {
 
 
 #form_data {
+    max-width: 800px;
     display: none;
     text-align: center;
 }
@@ -66,6 +75,29 @@ input:focus {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 200px 200px 200px;
+}
+
+
+
+.unbox {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 320px 320px 320px;
+}
+
+
+
+.onbox {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 320px 320px 320px;
+}
+
+
+
+.ititle {
+    text-align: center;
+    color: var(--tg-theme-text-color);
 }
 
 
@@ -121,9 +153,30 @@ input:focus {
 
 
 
+.bit {
+    margin: auto;
+    display: block;
+    border: 0;
+    border-radius: 7px;
+    margin-top: 10px;
+    height: 50px;
+    width: 180px;
+    transition: all 500ms ease;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    background: #51a7e9;
+}
+
+
+
 .main {
      text-align: center;
 }
 
 
 
+.item {
+    text-align: center;
+}
