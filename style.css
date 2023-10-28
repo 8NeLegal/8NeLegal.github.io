@@ -55,7 +55,6 @@ input:focus {
 #form_data {
     max-width: 390px;
     display: none;
-    text-align: center;
 }
 
 
@@ -98,7 +97,7 @@ input:focus {
 
 
 .ititle {
-    max-width: 500px;
+    max-width: 390px;
     text-align: center;
     color: var(--tg-theme-text-color);
 }
