@@ -181,3 +181,9 @@ input:focus {
 .item {
     text-align: center;
 }
+
+
+
+.hide {
+    visibility: hidden;
+}
