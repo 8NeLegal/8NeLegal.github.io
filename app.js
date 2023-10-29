@@ -1,4 +1,4 @@
-уlet tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 let start = document.getElementById("start");
 let end = document.getElementById("end");
 
@@ -17,6 +17,8 @@ end.addEventListener("click", () => {
 	
     document.getElementById("form_data").style.display = "none";
 
+
+	
 	if document.getElementById("main").style.display = "block":
 		document.getElementById("main").style.display = "none";
 		document.getElementById("form_send").style.display = "block";
