@@ -13,12 +13,18 @@ start.addEventListener("click", () => {
 
 end.addEventListener("click", () => {
 
-    document.getElementById("form_send").style.display = "block";
+
+	
     document.getElementById("form_data").style.display = "none";
+
+	if document.getElementById("main").style.display = "block":
+		document.getElementById("main").style.display = "none";
+		document.getElementById("form_send").style.display = "block";
+	
     
     
-
-
+    
+    
 
 
 });
