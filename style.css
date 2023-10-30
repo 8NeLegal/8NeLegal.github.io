@@ -37,7 +37,7 @@ input {
     outline: none;
     margin: 10px 30px;
     padding: 15px 10px;
-    font-size: 14px;
+    font-size: 15px;
     border: 2px solid silver;
     border-radius: 7px;
     background: var(--tg-theme-bg-color);
