@@ -24,14 +24,6 @@ h2 {
 
 
 
-h3 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-
 input {
     width: 347px;
     outline: none;
@@ -194,3 +186,26 @@ input:focus {
 .hor {
     border-top: 2px solid var(--tg-theme-text-color);
 }
+
+
+
+.help {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.listick {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    padding: 5px;
+
+    background: red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
