@@ -205,8 +205,8 @@ input:focus {
     margin-bottom: 0px;
     border-radius: 5px;
     padding: 5px;
-
-    background: red;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
