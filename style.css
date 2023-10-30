@@ -8,6 +8,12 @@ body {
 
 
 
+hr {
+    border-top: 10px solid var(--tg-theme-link-color);
+}
+
+
+
 h1 {
     margin-top: 50px;
     margin-bottom: 10px;
