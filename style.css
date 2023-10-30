@@ -33,7 +33,7 @@ h3 {
 
 
 input {
-    width: 345px;
+    width: 347px;
     outline: none;
     margin: 10px 30px;
     padding: 15px 10px;
@@ -68,6 +68,14 @@ input:focus {
 
 .box {
     max-width: 500px;
+}
+
+
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
 }
 
 
