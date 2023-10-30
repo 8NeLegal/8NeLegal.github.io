@@ -33,7 +33,7 @@ h3 {
 
 
 input {
-    width: 350px;
+    width: 345px;
     outline: none;
     margin: 10px 30px;
     padding: 15px 10px;
@@ -184,5 +184,5 @@ input:focus {
 
 
 .hor {
-    border-top: 5px solid var(--tg-theme-text-color);
+    border-top: 2px solid var(--tg-theme-text-color);
 }
