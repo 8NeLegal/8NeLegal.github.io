@@ -184,5 +184,5 @@ input:focus {
 
 
 .hor {
-    border-top: 7px solid var(--tg-theme-text-color);
+    border-top: 5px solid var(--tg-theme-text-color);
 }
