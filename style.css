@@ -206,7 +206,7 @@ input:focus {
     border-radius: 5px;
     padding: 5px;
     color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
+    background: var(--tg-theme-secondary-bg-color);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
