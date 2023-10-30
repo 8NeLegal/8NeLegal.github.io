@@ -67,7 +67,10 @@ input:focus {
 .list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px;
+    text-align: left;
+    max-width: 350px;
+    margin-left: 20px;
 }
 
 
