@@ -9,7 +9,7 @@ body {
 
 
 hr {
-    border-top: 10px solid var(--tg-theme-bg-color);
+    border-top: 7px solid var(--tg-theme-text-color);
 }
 
 
