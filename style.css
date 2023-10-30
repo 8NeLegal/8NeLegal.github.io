@@ -8,12 +8,6 @@ body {
 
 
 
-hr {
-    border-top: 7px solid var(--tg-theme-bg-color);
-}
-
-
-
 h1 {
     margin-top: 50px;
     margin-bottom: 10px;
@@ -185,4 +179,10 @@ input:focus {
 
 .hide {
     visibility: hidden;
+}
+
+
+
+.hor {
+    border-top: 7px solid var(--tg-theme-text-color);
 }
