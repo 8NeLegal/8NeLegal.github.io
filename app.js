@@ -5,18 +5,6 @@ let end = document.getElementById("end");
 tg.expand();
 
 
-start.addEventListener("click", () => {
-    document.getElementById("main").style.display = "none";
-    document.getElementById("form_data").style.display = "block";
-});
-
-
-end.addEventListener("click", () => {
-    document.getElementById("form_data").style.display = "none";
-    document.getElementById("form_send").style.display = "block";
-});
-
-
 
 
 
