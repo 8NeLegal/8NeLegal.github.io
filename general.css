@@ -1,0 +1,60 @@
+
+.list {
+    max-width: 500px;
+}
+
+
+
+.general {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px;
+    text-align: center;
+}
+
+
+
+.text1 {
+    text-align: center
+}
+
+
+
+.text3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.img {
+    padding-top: 10px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+
+
+.btn {
+    margin: auto;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 60px;
+    width: 200px;
+    transition: all 500ms ease;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+}
+
+
+
+.btn:hover {
+    background: var(--tg-theme-secondary-bg-color)
+}
