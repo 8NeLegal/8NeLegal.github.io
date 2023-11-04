@@ -15,7 +15,8 @@
 
 
 .text1 {
-    text-align: center
+    text-align: center;
+    color: var(--tg-theme-text-color);
 }
 
 
@@ -24,6 +25,7 @@
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: center;
+    color: var(--tg-theme-text-color);
 }
 
 
