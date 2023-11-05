@@ -46,6 +46,9 @@ input:focus {
 
 a {
     text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
 }
 
 
