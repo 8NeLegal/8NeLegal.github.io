@@ -37,20 +37,6 @@ a {
 
 
 
-#form_data {
-    max-width: 600px;
-    display: none;
-}
-
-
-
-#form_send {
-    display: none;
-    text-align: center;
-}
-
-
-
 .box {
     max-width: 500px;
 }
