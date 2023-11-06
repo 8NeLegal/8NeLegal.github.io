@@ -67,6 +67,22 @@ a {
 
 
 
+.kristal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 320px 320px;
+}
+
+
+
+.moon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 320px 10px;
+}
+
+
+
 .bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -275,16 +291,4 @@ a {
 
 
 
-.kristal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 320px 320px 320px;
-}
 
-
-
-.moon {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 320px 320px 10px;
-}
