@@ -43,17 +43,6 @@ a {
 
 
 
-.list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
-    text-align: left;
-    max-width: 350px;
-    margin-left: 20px;
-}
-
-
-
 .inbox {
     display: grid;
     grid-template-columns: 1fr;
@@ -74,6 +63,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 320px 320px 10px;
+}
+
+
+
+.bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    width: 500px;
 }
 
 
@@ -147,6 +145,31 @@ a {
 
 
 
+.btn_bye {
+    margin: auto;
+    display: block;
+    border: 0;
+    border-radius: 7px;
+    margin-top: 10px;
+    height: 30px;
+    width: 180px;
+    transition: all 500ms ease;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    background: #51a7e9;
+}
+
+
+
+.cent {
+    margin-left: 8px;
+    text-align: left;
+}
+
+
+
 .main {
      text-align: center;
 }
@@ -213,17 +236,26 @@ a {
 
 
 
-.listick {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    border-radius: 5px;
-    padding: 10px;
-    color: blue;
-    background: red;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.title {
+    margin-top: 20px;
+    margin-left: 8px;
+    text-align: left;
 }
+
+
+
+.subtitle {
+    margin-top: 28px;
+    margin-left: 8px;
+    text-align: left;
+}
+
+
+
+.subtitle_text_item {
+    margin-top: 2px;
+    margin-left: 8px;
+    text-align: left;
 
 
 
