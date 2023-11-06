@@ -8,22 +8,6 @@ body {
 
 
 
-h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-
-h2 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-
 input {
     width: 347px;
     outline: none;
@@ -183,12 +167,6 @@ a {
 
 
 
-.item {
-    text-align: center;
-}
-
-
-
 .hide {
     visibility: hidden;
 }
@@ -201,7 +179,47 @@ a {
 
 
 
-.help {
+.h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.h5 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.h6 {
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: center;
