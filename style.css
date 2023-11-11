@@ -37,6 +37,42 @@ a {
 
 
 
+h1 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
+h2 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
+h3 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
+h4 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
+h5 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
+h6 {
+    color: var(--tg-theme-text-color);
+}
+
+
+
 .box {
     max-width: 500px;
 }
