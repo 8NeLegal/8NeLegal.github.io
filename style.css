@@ -104,9 +104,8 @@ a {
 .img_item {
     margin: auto;
     display: block;
-    margin-left: 75px;
-    margin-top: 75px;
-    width: 250px;
+    margin-top: 25px;
+    width: 300px;
 }
 
 
