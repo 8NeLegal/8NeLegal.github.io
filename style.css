@@ -1,0 +1,132 @@
+body {
+    background: grey;
+}
+
+
+input:focus {
+    border-color: dodgerblue;
+}
+
+
+.si {
+    color: dodgerblue;
+}
+
+
+.su {
+    color: white;
+    text-decoration: none;
+    width: 16px;
+    height: 14px;
+
+}
+
+
+.box {
+    margin: auto;
+    display: block;
+    background: white;
+    text-align: center;
+    margin-top: 60px;
+    max-width: 550px;
+    border-radius: 15px;
+}
+
+
+.title {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    font-size: 40px;
+    font-family: boldly, 'Comic Sans MS', cursive;
+}
+
+
+.untitle {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: boldly, 'Comic Sans MS', cursive;
+}
+
+
+.inputick {
+    display: flex;
+    margin: auto;
+    max-width: 500px;
+}
+
+
+.check_1 {
+    outline: none;
+    width: 190px;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: dimgrey;
+}
+
+
+.check_2 {
+    outline: none;
+    width: 190px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: dimgrey;
+}
+
+
+.check_3 {
+    outline: none;
+    width: 400px;
+    margin: 20px 50px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: dimgrey;
+}
+
+
+.check_4 {
+    outline: none;
+    width: 400px;
+    margin: 0px 50px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: dimgrey;
+}
+
+
+.sign {
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+    margin: 20px 50px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background: dodgerblue;
+    color: white;
+}
+
+
+@font-face {
+    font-family: boldly;
+    src: url(resources/boldly.ttf);
+}
