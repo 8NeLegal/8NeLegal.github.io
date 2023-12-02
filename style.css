@@ -45,7 +45,7 @@ input:focus {
     padding-top: 50px;
     font-size: 40px;
     font-family: boldly, 'Comic Sans MS', cursive;
-    color: blue;
+    color: pink;
 }
 
 
@@ -165,21 +165,11 @@ input:focus {
         padding-bottom: 5%;
     }
 
-    .html {
-        height: 1280px;
-    }
-}
-
 
 @media (max-width: 768px) {
     .box{
         padding-bottom: 7%;
     }
-
-    .html {
-        height: 1280px;
-    }
-}
 
 
 @media (max-width: 540px) {
@@ -231,12 +221,7 @@ input:focus {
         margin-right: 20px;
     }
 
-    .html {
-        height: 720px;
-    }
-}
-
-
+    
 @media (max-width: 476px) {
     .check_1{
         margin-left: 20px;
@@ -508,13 +493,9 @@ input:focus {
     .sign {
         width: 270px;
     }
-
-    .html {
-        height: 522px;
-    }
 }
 
-
+    
 @media (max-width: 350px) {
     .check_1{
         margin-left: 30px;
