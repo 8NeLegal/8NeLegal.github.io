@@ -185,6 +185,10 @@ input:focus {
     .box{
         padding-bottom: 5%;
     }
+
+    .html {
+        height: 900px;
+    }
 }
 
 
