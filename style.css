@@ -361,6 +361,10 @@ input:focus {
     .sign {
         width: 370px;
     }
+
+    .html {
+        height: 522px;
+    }
 }
 
 
@@ -510,10 +514,6 @@ input:focus {
 
     .sign {
         width: 270px;
-    }
-
-    .html {
-        height: 522px;
     }
 }
 
