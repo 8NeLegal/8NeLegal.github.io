@@ -1,5 +1,5 @@
 body {
-    background: grey;
+    background-image: url(https://images.wallpapersden.com/image/download/colorful-gradient_a2ZoamaUmZqaraWkpJRobWllrWdpZWU.jpg);
 }
 
 
@@ -27,7 +27,7 @@ input:focus {
     display: block;
     background: white;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
     max-width: 550px;
     border-radius: 15px;
 }
