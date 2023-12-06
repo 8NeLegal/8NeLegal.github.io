@@ -158,7 +158,7 @@ input:focus {
     margin: auto;
     display: block;
     grid-area: preview;
-    padding-top: 35px;
+    padding: 35px;
     width: 250px;
     height: 250px;
     border-radius: 100%;
