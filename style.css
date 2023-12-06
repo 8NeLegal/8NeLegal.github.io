@@ -1,8 +1,3 @@
-body {
-    background: linear-gradient(30deg, purple, skyblue);
-}
-
-
 input:focus {
     border-color: dodgerblue;
 }
@@ -22,6 +17,7 @@ input:focus {
 
 
 .html {
+    background: linear-gradient(30deg, purple, skyblue);
     height: 2560px;
 }
 
