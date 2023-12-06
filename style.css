@@ -26,6 +26,13 @@ input:focus {
 }
 
 
+.buttonchick-sn {
+    margin: auto;
+    display: block;
+    padding-top: 115px;
+}
+
+
 .box {
     margin: auto;
     display: block;
