@@ -376,6 +376,10 @@ input:focus {
     .sign {
         width: 370px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -399,6 +403,10 @@ input:focus {
     }
 
     .sign {
+        width: 370px;
+    }
+
+    .sign-end {
         width: 370px;
     }
 }
@@ -426,6 +434,10 @@ input:focus {
     .sign {
         width: 320px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -450,6 +462,10 @@ input:focus {
 
     .sign {
         width: 320px;
+    }
+
+    .sign-end {
+        width: 370px;
     }
 }
 
@@ -476,6 +492,10 @@ input:focus {
     .sign {
         width: 320px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -500,6 +520,10 @@ input:focus {
 
     .sign {
         width: 320px;
+    }
+
+    .sign-end {
+        width: 370px;
     }
 }
 
@@ -526,6 +550,10 @@ input:focus {
     .sign {
         width: 270px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -550,6 +578,10 @@ input:focus {
 
     .sign {
         width: 270px;
+    }
+
+    .sign-end {
+        width: 370px;
     }
 
     .html {
@@ -580,6 +612,10 @@ input:focus {
     .sign {
         width: 270px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -605,6 +641,10 @@ input:focus {
     .sign {
         width: 270px;
     }
+
+    .sign-end {
+        width: 370px;
+    }
 }
 
 
@@ -629,5 +669,9 @@ input:focus {
 
     .sign {
         width: 270px;
+    }
+
+    .sign-end {
+        width: 370px;
     }
 }
