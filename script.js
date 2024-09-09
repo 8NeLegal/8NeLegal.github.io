@@ -54,7 +54,7 @@ else if (paperSource === 'res/banners/paper/kimetsu no yaiba yuukaku-hen.png') {
 else if (paperSource === 'res/banners/paper/sousou no frieren.png') {
     title.textContent = "Провожающая в последний путь Фрирен";
     caption.textContent = "Одержав победу над Королём демонов, отряд героя Химмеля вернулся домой. Приключение, растянувшееся на десятилетие, подошло к завершению. Волшебница-эльф Фрирен и её отважные товарищи принесли людям мир и разошлись в разные стороны, чтобы спокойно прожить остаток жизни. Однако не всех членов отряда ждёт одинаковая участь.";
-    video.src = "res/banners/video/sousou no frieren.mp4";
+    video.src = "https://youtu.be/-jGBp5HBLFs?si=o-nzbj_hnOub6E8t";
     video.load();
 }
 
