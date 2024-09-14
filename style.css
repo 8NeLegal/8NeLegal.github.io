@@ -1,0 +1,395 @@
+/* Main */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    color-scheme: dark;
+    scrollbar-width: thin;
+    background: #080808;
+    scrollbar-color: hsla(0,0%,100%,.15) rgba(28,28,28,.15);
+}
+
+.banner {
+    width: 100%;
+    height: 790px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-anime-gradient {
+    height: 100%;
+    z-index: 2;
+    background: radial-gradient(circle,rgba(0, 0, 0, .235) 0,rgba(0, 0, 0, .477) 28%,rgba(0, 0, 0, .678) 62%,rgba(0, 0, 0, .863) 87%),linear-gradient(0deg,#000,transparent 40%);
+}
+
+.banner-anime-paper {
+    width: 100%;
+    height: 790px;
+    transition: .3s;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+}
+
+.banner-anime-video {
+    width: 100%;
+    height: 790px;
+    transition: .3s;
+    z-index: 3;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    display: none;
+}
+
+.auth-anime {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.user-avatar {
+    margin-top: -770px;
+    border-radius: 50px;
+    padding: 11px 15px;
+    transition: .3s;
+    font-size: 24px;
+    left: 40px;
+    z-index: 5;
+    background: hsla(0,0%,100%,.16);
+    border: 1px solid transparent;
+    position: absolute;
+    color: #ccc;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.user-search {
+    margin-top: -770px;
+    border-radius: 50px;
+    padding: 6.5px 8.6px;
+    transition: .3s;
+    font-size: 20px;
+    margin-left: 100px;
+    right: 92px;
+    z-index: 5;
+    background: hsla(0,0%,100%,.16);
+    border: 1px solid transparent;
+    position: absolute;
+    color: #ccc;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.user-settings {
+    margin-top: -770px;
+    border-radius: 50px;
+    padding: 5px 7.5px;
+    transition: .3s;
+    font-size: 22px;
+    margin-left: 160px;
+    right: 40px;
+    z-index: 5;
+    background: hsla(0,0%,100%,.16);
+    border: 1px solid transparent;
+    position: absolute;
+    color: #ccc;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.info-anime {
+    width: 100%;
+    margin-left: 80px;
+    margin-top: -125px;
+    z-index: 5;
+    position: absolute;
+}
+
+.title-anime {
+    width: 90%;
+    font-weight: 50;
+    font-size: 50px;
+    margin-top: -108px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+}
+
+.caption-anime {
+    width: 75%;
+    font-weight: 30;
+    font-size: 20px;
+    margin-top: -44px;
+    color: #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+}
+
+.button-play {
+    border-radius: 50px;
+    padding: 10px 24px;
+    transition: .3s;
+    font-size: 16px;
+    max-height: 40px;
+    margin-right: 6px;
+    border: 1px solid transparent;
+    background: #eee;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.button-detailed {
+    border-radius: 50px;
+    padding: 10px 24px;
+    transition: .3s;
+    font-size: 16px;
+    max-height: 40px;
+    margin-right: 6px;
+    border: 1px solid transparent;
+    background: #2d2a31;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.button-volume {
+    border-radius: 50px;
+    padding: 10px 14px;
+    transition: .3s;
+    font-size: 16px;
+    max-height: 40px;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid transparent;
+    background: #2d2a31;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.button-play:hover, .button-detailed:hover, .button-volume:hover {
+    filter: brightness(82%);
+}
+
+.user-avatar:hover, .user-settings:hover, .user-search:hover {
+    color: white;
+}
+
+.title-anime-animate {
+    margin-top: -55px;
+    font-size: 35px;
+}
+
+.info-anime-animate {
+    margin-top: -90px;
+}
+
+.ending {
+    width: 100%;
+    height: 2000px;
+}
+
+
+
+/* Auth */
+
+.name-icon {
+    font-size: 32px;
+    color: white;
+}
+
+.auth {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.header-auth {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.ending-auth {
+    width: 65%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-login {
+    width: 21.7%;
+    margin: auto;
+    display: none;
+}
+
+.active-auth {
+    margin: auto;
+    display: grid;
+}
+
+.input {
+    padding: 12px 10px;
+    border-radius: 12px;
+    min-width: 250px;
+    outline: none;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    font-weight: 500;
+    transition: .2s;
+    background: #0a0a0a;
+    border: 2px solid #303030;
+}
+
+.input:focus {
+    border-color: white;
+}
+
+.inputico {
+    width: 275px;
+    display: flex;
+    align-items: center;
+}
+
+.nextback {
+    display: grid;
+    width: 275px;
+}
+
+.auth-ico {
+    font-size: 20px;
+    margin-left: -30px;
+    transition: .2s;
+    pointer-events: auto;
+    color: #303030;
+}
+
+#auth-ico-password-one, #auth-ico-name-one {
+    display: none;
+}
+
+#auth-ico-password-one:hover {
+    margin-bottom: 2px;
+}
+
+.input-btn {
+    padding: 12px 15px;
+    border-radius: 12px;
+    min-width: 250px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    transition: .2s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#input-btn-next {
+    background: white;
+    color: black;
+}
+
+#input-btn-next:hover {
+    background: #cecece;
+}
+
+#input-btn-back {
+    background: #303030;
+    color: white;
+}
+
+#input-btn-back:hover {
+    background: #3a3a3a;
+}
+.line {
+    margin: auto;
+    width: 300px;
+    height: 2px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #303030;
+}
+
+.link-button {
+    margin: auto;
+    width: 300px;
+    padding: 15px 15px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    transition: .2s;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#link-google {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: white;
+    color: black;
+}
+
+#link-google:hover {
+    background: #cecece;
+}
+
+#link-discord {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    background: #4a47d7;
+    color: white;
+}
+
+#link-discord:hover {
+    background: #5451ed;
+}
+
+#link-vk {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    background: #007bff;
+    color: white;
+}
+
+#link-vk:hover {
+    background: #1787ff;
+}
+
+#link-github {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    background: #1c1c1c;
+    color: white;
+}
+
+#link-github:hover {
+    background: #2d2a31;
+}
+
+#inputPasswordLogin, #inputNameLogin {
+    display: none;
+}
