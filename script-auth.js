@@ -8,6 +8,7 @@ var inputPasswordLogin = document.getElementById("inputPasswordLogin");
 var buttonNext = document.getElementById("input-btn-next");
 var buttonBack = document.getElementById("input-btn-back");
 
+alert( localStorage.getItem('testICK') );
 
 inputNameLogin.addEventListener('focus', function() {
     inputNameLogin.style.border = "2px solid white";
