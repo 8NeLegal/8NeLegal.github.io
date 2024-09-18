@@ -10,6 +10,7 @@ var title = document.getElementById("title-anime");
 var play = document.getElementById("button-play");
 var info = document.getElementById("info-anime");
 
+alert(localStorage.getItem('currentUser));
 
 var papers = [
     'res/banners/paper/oshi no ko.png',
