@@ -10,8 +10,6 @@ var title = document.getElementById("title-anime");
 var play = document.getElementById("button-play");
 var info = document.getElementById("info-anime");
 
-alert(localStorage.getItem('currentUser));
-
 var papers = [
     'res/banners/paper/oshi no ko.png',
     'https://anitype.fun/_next/image?url=https%3A%2F%2Fstorage.anitype.fun%2Ftrailers%2F40748%2Ftrailer.webp&w=3840&q=100',
@@ -260,6 +258,11 @@ volume.addEventListener("click", function() {
 
 
 avatar.addEventListener("click", function() {
-    localStorage.setItem('testICK', 1234);
     window.location.href = 'index-auth.html';
 });
+
+if (localStorage.getItem(currentUser) !== "") {
+    alert(localStorage.getItem('currentUser));
+} else {
+    alert("Пока пусто");
+}                              
