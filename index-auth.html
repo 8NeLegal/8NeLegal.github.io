@@ -208,6 +208,8 @@
 
             const userId = user.email.split('@')[0];
 
+            localStorage.setItem('currentUser', userId);
+
             getUserDisplayName(userId).then(displayName => {
                 profile_user_name.textContent = displayName;
             });
