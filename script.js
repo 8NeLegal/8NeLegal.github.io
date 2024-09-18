@@ -259,5 +259,6 @@ volume.addEventListener("click", function() {
 
 
 avatar.addEventListener("click", function() {
+    localStorage.setItem('testICK', 1234);
     window.location.href = 'index-auth.html';
 });
