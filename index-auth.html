@@ -372,8 +372,9 @@
         if (window.confirm("Вы точно хотите выйти из аккаунта?")) {
             auth.signOut().then(() => {
                 console.log("Пользователь вышел из системы.");
-                auth_window_user.style.display = "block"
                 profile_window_user.style.display = "none";
+                auth_window_user.style.display = "block";
+                localStorage.removeItem("currentUser");
             }).catch((error) => {
                 console.error("Ошибка при выходе:", error);
             });
