@@ -253,11 +253,14 @@ volume.addEventListener("click", function() {
 });
 
 
-if (localStorage.getItem(currentUser) !== null) {
-        alert(localStorage.getItem('currentUser));
-    } else {
-        alert("Пока пусто");
-    }
+// if (localStorage.getItem(currentUser) !== null) {
+//         alert(localStorage.getItem('currentUser));
+//     } else {
+//         alert("Пока пусто");
+//     }
+
+const Id = localStorage.getItem(currentUser).value
+console.log(Id);
 
 
 avatar.addEventListener("click", function() {
