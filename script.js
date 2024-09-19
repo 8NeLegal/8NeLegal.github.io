@@ -258,11 +258,8 @@ volume.addEventListener("click", function() {
 
 
 avatar.addEventListener("click", function() {
-    if (localStorage.getItem(currentUser) !== "") {
-        alert(localStorage.getItem('currentUser));
-    } else {
-        alert("Пока пусто");
-    }
-    
     window.location.href = 'index-auth.html';
 });
+
+
+console.log(localStorage.getItem(currentUser));
