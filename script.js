@@ -41,7 +41,6 @@ var paperSource = papers[randomIndex];
 
 function setRandomPapers() {
     paper.src = paperSource;
-    paper.load();
 }
 
 window.onload = setRandomPapers;
@@ -210,9 +209,6 @@ else if (paperSource === 'https://anitype.fun/_next/image?url=https%3A%2F%2Fstor
 
 
 
-
-
-
 setTimeout(function() {
 
     paper.style.opacity = "0";
@@ -255,6 +251,13 @@ volume.addEventListener("click", function() {
     }
 
 });
+
+
+if (localStorage.getItem(currentUser) !== null) {
+        alert(localStorage.getItem('currentUser));
+    } else {
+        alert("Пока пусто");
+    }
 
 
 avatar.addEventListener("click", function() {
