@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="res/icon-web.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+    <title>AniYouth | Главная</title>
+</head>
+
+<body>
+    <div class="pc">
+        <div class="header">
+            <div class="banner">
+                <video class="banner-anime-video" id="banner-video" preload="auto" muted></video>
+                    <source id="banner-anime-source" src="" type="video/mp4">
+                </video>
+    
+                <img src="" class="banner-anime-paper" id="banner-paper">
+    
+                <div class="banner-anime-gradient"></div>
+    
+                <div class="auth-anime" id="auth-anime">
+                    <button class="user-avatar" id="user-avatar"><i class="fa-solid fa-user" id="user-avatar-icon"></i></button>
+                    <button class="user-search" id="user-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="user-settings" id="user-settings"><i class="fa-solid fa-gear"></i></button>
+                </div>
+    
+                <div class="info-anime" id="info-anime">
+                    <div class="title-anime" id="title-anime">Название аниме</div>
+                    <div class="caption-anime" id="caption-anime">Описание аниме</div>
+                    <div class="info-anime-buttons" id="info-anime-buttons">
+                        <button class="button-play" id="button-play"><i class="fa-solid fa-play" style="margin-right: 10px;"></i>Смотреть в 4К</button>
+                        <button class="button-detailed" id="button-detailed"><i class="fa-solid fa-ellipsis-vertical" style="margin-right: 10px;"></i>Подробнее</button>
+                        <button class="button-volume" id="button-volume"><i class="fa-solid fa-volume-xmark"></i></button>
+                    </div>
+                </div> 
+            </div>
+            
+    
+
+
+
+            
+            
+        </div>
+    
+    
+    
+    
+    
+    
+    
+
+
+        <div class="ending">
+    
+        </div>
+
+
+    </div>
+    
+</body>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+    import { getDatabase, ref, get, set, child, update } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDen-cJJIsnG3H-oQ0hyZwjNd3HaIq_kkw",
+        authDomain: "aniyouth-2dcbb.firebaseapp.com",
+        databaseURL: "https://aniyouth-2dcbb-default-rtdb.firebaseio.com",
+        projectId: "aniyouth-2dcbb",
+        storageBucket: "aniyouth-2dcbb.appspot.com",
+        messagingSenderId: "761448145133",
+        appId: "1:761448145133:web:d2e74bcf71b565e822ece4",
+        measurementId: "G-7CNT2E27TL"
+    };
+
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const auth = getAuth(app);
+
+
+    const userId = localStorage.getItem("currentUser");
+
+
+    async function getUserPhotoURL(userId) {
+        const db = getDatabase();
+        const userRef = ref(db, 'web/' + userId);
+
+        try {
+            const snapshot = await get(userRef);
+            if (snapshot.exists()) {
+                const userData = snapshot.val();
+                return userData.avatar;
+            } else {
+                console.log("Пользователь не найден.");
+                return null;
+            }
+        } catch (error) {
+            console.error("Ошибка получения данных пользователя:", error);
+            return null;
+        }
+    }
+
+
+    const emailRef = ref(db, 'web/' + userId);
+
+    get(emailRef).then((snapshot) => {
+        if (snapshot.exists()) {
+            // 2. Если данные по email найдены
+            getUserPhotoURL(userId).then(photoURL => {
+            const user_avatar_icon = document.getElementById("user-avatar-icon")
+            const user_avatar_id = document.getElementById("user-avatar")
+
+            if (photoURL !== '') {
+                user_avatar_icon.style.opacity = "0";
+                user_avatar_id.style.cssText = "background-color: transparent;"
+                user_avatar_id.style.cssText = 'background-image: url(' + photoURL + ');'
+            }
+        });
+
+        } else {
+            // 3. Если данных нет
+            console.log("Пользователь не аутентифицирован.");
+        }
+    }).catch((error) => {
+        // 4. Обработка ошибок при чтении данных из базы
+        console.error("Ошибка при чтении данных:", error);
+    });
+
+</script>
+
+<script src="script.js"></script>
+
+</html>
