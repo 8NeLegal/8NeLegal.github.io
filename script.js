@@ -315,12 +315,6 @@ else if (paperSource === 'https://anitype.fun/_next/image?url=https%3A%2F%2Fstor
 
 
 
-
-
-
-
-
-
 setTimeout(function() {
 
     paper.style.opacity = "0";
@@ -336,7 +330,7 @@ setTimeout(function() {
         video.play();
     });
     
-}, 10000);
+}, 8000);
 
 
 video.addEventListener('ended', function() {
