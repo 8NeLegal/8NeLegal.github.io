@@ -336,7 +336,7 @@ setTimeout(function() {
         video.play();
     });
     
-}, 5000);
+}, 10000);
 
 
 video.addEventListener('ended', function() {
