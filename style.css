@@ -1,0 +1,1038 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+img {
+    user-select: none;
+}
+
+body {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    color: black;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 10% 0;
+}
+
+.container {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.wrapper header img {
+    width: 60px;
+    height: 60px;
+}
+
+.wrapper header .navigations {
+    width: 50%;
+    float: right;
+}
+
+.wrapper header .navigations ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.wrapper header .navigations ul li {
+    transition: .3s ease-in-out;
+    display: inline-block;
+    position: relative;
+}
+
+.wrapper header .navigations ul li a {
+    font-weight: 550;
+    font-size: 15px;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.wrapper header .navigations ul li:not(.active) a:hover {
+    opacity: 0.7;
+}
+
+.wrapper header .navigations ul .active::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background: #306afd;
+    display: block;
+    position: absolute;
+}
+
+/* HOME */
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.wrapper .trailer {
+    width: 100%;
+    padding-bottom: 175px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .trailer .caption {
+    width: 49%;
+    padding-right: 1%;
+}
+
+.wrapper .trailer .caption h1 {
+    width: 100%;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.wrapper .trailer .caption span{
+    width: 100%;
+}
+
+.wrapper .trailer .caption a {
+    padding: 18px 35px;
+    margin-top: 40px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: .3s;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    text-decoration: none;
+    width: fit-content;
+    cursor: pointer;
+    background: #306afd;
+    color: white;
+    display: block;
+}
+
+.wrapper .trailer .caption a:hover {
+    transform: scale(1.03);
+}
+
+.wrapper .trailer .bg {
+    width: 49%;
+    height: 500px;
+    margin-left: 1%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.wrapper .trailer .school {
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+    background: url('res/base/trailer.jpg');
+    background-size: cover;
+}
+
+.wrapper .trailer .school:hover {
+    transform: scale(1.05);
+}
+
+.wrapper .subjects h2 {
+    text-align: center;
+}
+
+.wrapper .subjects .lenta {
+    width: 100%;
+    height: 100px;
+    margin: 75px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper .subjects .lenta::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.wrapper .subjects .lenta .item {
+    width: 300px;
+    height: 80px;
+    margin: 0 12px;
+    border-radius: 20px;
+    z-index: 2;
+    background: #eeeeee;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.wrapper .subjects .lenta .item:hover a img, .wrapper .subjects .lenta .item:hover a span {
+    opacity: 1;
+    color: #FFFFFF;
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;
+    color: white;
+}
+
+.wrapper .subjects .lenta .item a img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.wrapper .subjects .lenta .item a span {
+    top: 50%;
+    left: 50%;
+    transition: .2s;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+}
+
+.window .achievements {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,0.55) 0%, rgba(2,0,36,0.55) 100%), url('res/base/achievements.jpg'), #eeeeee no-repeat fixed;
+    background-size: cover;
+}
+
+.window .achievements .caption {
+    width: 100%;
+}
+
+.window .achievements .caption h2 {
+    padding: 90px 0 45px;
+    text-align: center;
+    color: white;
+}
+
+.window .achievements .caption span {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.window .achievements .items {
+    width: 100%;
+    padding: 125px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.window .achievements .items .item {
+    width: 320px;
+    margin: 0 30px;
+    transition: .2s;
+    text-align: center;
+}
+
+.window .achievements .items .item:hover {
+    transform: translateY(25px);
+}
+
+.window .achievements .items .item h3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto 20px auto;
+    align-content: center;
+    background: white;
+    color: #306afd;
+}
+
+.window .achievements .items .item span {
+    font-size: 16px;
+    color: white;
+}
+
+/* ABOUT US */
+
+.wrapper .container .caption-about-us {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.wrapper .container .caption-about-us h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper .container .herous {
+    width: 100%;
+}
+
+.wrapper .container .herous .line {
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+}
+
+.wrapper .container .herous .line .imgl {
+    width: 350px;
+    height: 350px;
+    margin-left: 14%;
+    margin-right: 6%;
+    transition: .3s;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.wrapper .container .herous .line .imgr {
+    min-width: 350px;
+    height: 350px;
+    margin-left: 6%;
+    margin-right: 14%;
+    transition: .3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wrapper .container .herous .line .imgl:hover {
+    transform: rotateX(25deg) rotateY(10deg) skewX(5deg) scale(1.05);
+}
+
+.wrapper .container .herous .line .imgr:hover {
+    transform: rotateX(25deg) rotateY(-10deg) skewX(-5deg) scale(1.05);
+}
+
+.wrapper .container .herous .line .imgr button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    opacity: 0;
+    transition: .4s;
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.wrapper .container .herous .line .imgr:hover button {
+    opacity: 1;
+    display: block;
+}
+
+.wrapper .container .herous .line .imgr button a {
+    text-decoration: none
+}
+
+.wrapper .container .herous .line .imgr button a span {
+    padding: 10px 13px;
+    border-radius: 50px;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.wrapper .container .herous .line .divr {
+    width: 40%;
+    margin-left: 6%;
+    margin-right: 14%;
+    overflow: hidden;
+}
+
+.wrapper .container .herous .line .divl {
+    width: 40%;
+    margin-left: 14%;
+    margin-right: 6%;
+    overflow: hidden;
+}
+
+.wrapper .container .herous .line div h2 {
+    font-size: 24px;
+    margin-bottom: 36px;
+}
+
+.wrapper .container .herous .line div span {
+    font-size: 16px;
+    font-weight: 500;
+    align-content: center;
+}
+
+.wrapper .review {
+    width: 100%;
+    text-align: center;
+    background: #eeeeee;
+}
+
+.wrapper .review h2 {
+    padding: 70px 0 20px 0;
+    font-size: 24px;
+}
+
+.wrapper .review .untitle {
+    margin: 0 40px 50px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.wrapper .review .lenta .reviews {
+    width: 100%;
+    margin-bottom: 30px;
+    height: fit-content;
+    display: flex;
+}
+
+.wrapper .review .lenta .reviews .left-list, .wrapper .review .lenta .reviews .center-list, .wrapper .review .lenta .reviews .right-list {
+    width: 0%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+}
+
+.wrapper .review .lenta .reviews .left-list {
+    width: 100%;
+    opacity: 1;
+}
+
+.wrapper .review .lenta .reviews #highRang {
+    border: 3px solid #306afd;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.wrapper .review .lenta .reviews .item {
+    width: 24%;
+    height: 230px;
+    border-radius: 10px;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.wrapper .review .lenta .reviews .item .up {
+    height: 50px;
+    margin: 14px 14px 0 14px;
+    display: flex;
+    position: relative;
+}
+
+.wrapper .review .lenta .reviews .item .up img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapper .review .lenta .reviews .item .up .rang {
+    font-size: 14px;
+    font-weight: 550;
+    top: 50%;
+    right: 43px;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.wrapper .review .lenta .reviews .item .up svg {
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.wrapper .review .lenta .reviews .item .up .dops {
+    margin-left: 20px;
+    text-align: start;
+}
+
+.wrapper .review .lenta .reviews .item .up .dops .name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper .review .lenta .reviews .item .up .dops .date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wrapper .review .lenta .reviews .item .down {
+    height: 133px;
+    margin: 0 14px;
+    font-size: 16px;
+    font-weight: 450;
+    margin-top: 20px;
+    text-align: start;
+    overflow: hidden;
+}
+
+.wrapper .review .lenta .navigations {
+    width: 69%;
+    margin: 0 12%;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.wrapper .review .lenta .navigations div {
+    width: 15px;
+    height: 15px;
+    margin: auto 3px;
+    transition: .2s ease-in-out;
+    border-radius: 100%;
+    background: black;
+}
+
+.wrapper .review .lenta .navigations .active {
+    width: 45px;
+    height: 15px;
+    border-radius: 50px;
+    background: #306afd;
+}
+
+.wrapper .review .lenta .navigations button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    transition: .2s ease-in-out;
+    border: 2px solid #306afd;
+    outline: none;
+}
+
+.wrapper .review .lenta .navigations button i {
+    font-size: 20px;
+}
+
+.wrapper .review .lenta .navigations .no {
+    background: none;
+    color: #306afd;
+}
+
+.wrapper .review .lenta .navigations .yes {
+    background: #306afd;
+    color: white;
+}
+
+/* PORTFOLIO */
+
+.wrapper .container .caption-portfolio {
+    text-align: center;
+}
+
+.wrapper .container .caption-portfolio h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper .container .personal {
+    width: 100%;
+    height: 485px;
+    margin: 80px 0;
+    transition: .3s ease-in-out;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: flex;
+}
+
+.wrapper .container .personal .item {
+    width: 270px;
+    margin-bottom: 26px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.wrapper .container .personal .item img {
+    width: 100%;
+    height: 360px;
+    transition: .1s ease-in-out;
+    border-radius: 12px;
+    cursor: pointer;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.wrapper .container .personal .item img:hover {
+    opacity: 0.8;
+}
+
+.wrapper .container .personal .item h3 {
+    margin: 8px 0;
+    font-size: 18.5px;
+    cursor: pointer;
+}
+
+.wrapper .container .personal .item h5 {
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    color: gray;
+}
+
+.wrapper .container .see {
+    padding: 10px 17px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: .3s;
+    margin: 80px auto 0 auto;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.1);
+    display: block;
+}
+
+.wrapper .container .see:hover {
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.wrapper .container .dostigli {
+    width: 60%;
+    margin: 0 20%;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.wrapper .container .dostigli svg {
+    width: 40px;
+}
+
+.wrapper .container .dostigli .item, .wrapper .container .dostigli .item-center {
+    width: 300px;
+}
+
+.wrapper .container .dostigli .item h1, .wrapper .container .dostigli .item-center h1 {
+    font-size: 60px;
+    color: #306afd;
+}
+
+.wrapper .container .dostigli .item span, .wrapper .container .dostigli .item-center span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrapper .container .dostigli .item-center {
+    margin-top: 40px;
+}
+
+/* NEWS */
+
+.wrapper .container .caption-news {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.wrapper .container .caption-news h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper .container .search {
+    width: 350px;
+    height: 42px;
+    margin: 0px auto 75px auto; 
+    display: flex;
+    position: relative;
+}
+
+.wrapper .container .search .searching {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    background: #eeeeee;
+    position: absolute;
+}
+
+.wrapper .container .search svg {
+    width: 16px;
+    top: 50%;
+    left: 12px;
+    z-index: 2;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.wrapper .container .search input {
+    width: 289px;
+    height: 100%;
+    top: 50%;
+    right: 10px;
+    border: 0;
+    z-index: 2;
+    font-weight: 500;
+    transition: .2s;
+    transform: translateY(-50%);
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    outline: none;
+    background: none;
+    position: absolute;
+}
+
+.wrapper .container .search input:focus + .searching {
+    transform: scale(1.02, 1.1);
+}
+
+.wrapper .container .search input:focus {
+    font-size: 14px;
+}
+
+.wrapper .container .content {
+    width: 100%;
+    height: 1585px;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.wrapper .container .content .trailer {
+    width: 48%;
+    margin-right: 2%;
+    display: block;
+    overflow-y: hidden;
+}
+
+.wrapper .container .content .trailer .ramka {
+    width: 100%;
+    height: 355px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wrapper .container .content .trailer img {
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+}
+
+.wrapper .container .content .trailer img:hover {
+    transform: scale(1.02);
+}
+
+.wrapper .container .content .trailer .category {
+    margin: 10px 0 22px 0;
+}
+
+.wrapper .container .content .trailer .category .status {
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper .container .content .trailer h2 {
+    font-size: 24px;
+}
+
+.wrapper .container .content .trailer h5 {
+    margin: 2px 0 22px 0;
+    font-weight: 500;
+}
+
+.wrapper .container .content .trailer span {
+    font-size: 16px;
+}
+
+.wrapper .container .content .trailer hr {
+    height: 2px;
+    border: 0;
+    margin: 70px 0;
+    background: black;
+}
+
+.wrapper .container .content .lenta {
+    width: 48%;
+    height: 100%;
+    margin-left: 2%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper .container .content .lenta::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.wrapper .container .content .lenta .item {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.wrapper .container .content .lenta .item img {
+    width: 200px;
+    height: 180px;
+    min-width: 200px;
+    border-radius: 18px;
+    transition: .2s;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.wrapper .container .content .lenta .item img:hover {
+    opacity: 0.7;
+}
+
+.wrapper .container .content .lenta .item .caption {
+    width: 68%;
+    margin-left: 22px;
+    overflow: hidden;
+}
+
+.wrapper .container .content .lenta .item .caption .category {
+    margin: 15px 0;
+}
+
+.wrapper .container .content .lenta .item .caption .category .status {
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper .container .content .lenta .item .caption .category .time {
+    font-size: 14px;
+}
+
+.wrapper .container .content .lenta .item .caption h3 {
+    margin-bottom: 2px;
+    font-size: 18px;
+    white-space: normal;
+}
+
+.wrapper .container .content .lenta .item .caption h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* CONTACTS */
+
+.wrapper .container .caption-contacts {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.wrapper .container .caption-contacts h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper .container .infomap {
+    width: 100%;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.wrapper .container .infomap .itemmap {
+    width: 20%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper .container .infomap .itemmap:hover {
+    a {
+        padding-bottom: 10px;
+    }
+}
+
+.wrapper .container .infomap .itemmap svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+
+.wrapper .container .infomap .itemmap h5 {
+    cursor: pointer;
+}
+
+.wrapper .container .infomap .itemmap a {
+    height: 50px;
+    transition: .2s ease-in-out;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper .container .infomap hr {
+    width: 2px;
+    height: 100px;
+    border: 0;
+    background: black;
+}
+
+.window .lines {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    position: relative;
+}
+
+.window .lines .box {
+    width: 420px;
+    margin: auto;
+}
+
+.window .lines .box .input {
+    width: 95.3%;
+    padding: 13px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    background: none;
+    color: black;
+    outline: none;
+}
+
+.window .lines .box textarea {
+    width: 95.3%;
+    max-height: 180px;
+    height: 17px;
+    padding: 13px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    resize: vertical;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    background: none;
+    color: black;
+    outline: none;
+}
+
+.window .lines .box button {
+    width: 101%;
+    padding: 13px 10px;
+    margin-top: 20px;
+    border-radius: 5px 5px 10px 10px;
+    border: 2px solid #306afd;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    background: none;
+    color: black;
+}
+
+.window .lines .box button:hover {
+    font-size: 17px;
+    font-weight: 550;
+    background: #306afd;
+    color: white;
+}
+
+.window .lines .box .names {
+    display: flex;
+}
+
+.window .lines .box .names input {
+    width: 180px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid black;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    background: none;
+    color: black;
+    outline: none;
+}
+
+.window .lines .line1 {
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.window .lines .line2 {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+footer hr {
+    height: 2px;
+    border: 0;
+    margin-top: 40px;
+    background: black;
+}
+
+footer .container {
+    padding: 0;
+}
+
+footer .container .caption {
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+
+footer .container .caption img {
+    width: 60px;
+    height: 60px;
+}
+
+footer .container .caption svg {
+    width: 35px;
+    right: 0;
+    transition: .3s;
+    margin: auto 0;
+    cursor: pointer;
+    position: absolute
+}
+
+footer .container .caption svg:hover {
+    transform: scale(1.1);
+}
+
+footer .container .caption .info {
+    margin-left: 40px;
+}
+
+footer .container .caption .info span {
+    font-size: 15px;
+}
+
+footer .container .caption .info h5 {
+    margin-top: 5px;
+    cursor: pointer;
+}
