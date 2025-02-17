@@ -17,6 +17,9 @@ const pointOne = document.getElementById('pointOne');
 const pointTwo = document.getElementById('pointTwo');
 const pointThree = document.getElementById('pointThree');
 
+const newsTrailer = document.getElementById('newsTrailer');
+const newsLenta = document.getElementById('newsLenta');
+
 const personalHeightVavier = (85 / Math.floor(personal.offsetWidth / 270)) * 520;
 
 
@@ -31,7 +34,7 @@ function lentaScrolX() {
     });
 }
 
-// --
+//--
 
 function checkAll() {
     if (i === 0) {
@@ -113,4 +116,10 @@ function roolRightToRight() {
     rightButton.classList = "no";
     pointTwo.classList = "";
     pointThree.classList = "active";
+}
+
+//--
+
+function newsContentHeight() {
+    newsLenta.style.height = newsTrailer.offsetHeight + "px";
 }
