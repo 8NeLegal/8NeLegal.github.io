@@ -897,6 +897,10 @@ header {
     margin: auto;
 }
 
+.window .lines .box input:user-invalid {
+    border-color: red;
+}
+
 .window .lines .box .input {
     width: 95.3%;
     padding: 13px 10px;
