@@ -96,8 +96,8 @@ header {
 }
 
 .wrapper .trailer .caption {
-    width: 49%;
-    padding-right: 1%;
+    width: 47%;
+    padding-right: 3%;
 }
 
 .wrapper .trailer .caption h1 {
@@ -132,9 +132,9 @@ header {
 }
 
 .wrapper .trailer .bg {
-    width: 49%;
+    width: 47%;
     height: 500px;
-    margin-left: 1%;
+    margin-left: 3%;
     border-radius: 40px;
     overflow: hidden;
 }
