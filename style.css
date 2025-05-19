@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     cursor: default;
+    background: green;
 }
 
 img {
@@ -15,7 +16,7 @@ body {
     font-weight: 500;
     font-family: "Montserrat", serif;
     font-style: normal;
-    background: green;
+    background: white;
     color: black;
 }
 
