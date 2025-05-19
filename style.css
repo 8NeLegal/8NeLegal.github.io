@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     cursor: default;
-    background: pink;
 }
 
 img {
@@ -16,7 +15,7 @@ body {
     font-weight: 500;
     font-family: "Montserrat", serif;
     font-style: normal;
-    background: pink;
+    background: white;
     color: black;
 }
 
