@@ -1,0 +1,41 @@
+{
+    "r1": {
+        "character": [],
+        "bg": "../../assets/bg/1.png"
+    },
+
+    "r2": {
+        "character": [],
+        "bg": "../../assets/bg/2.png"
+    },
+    
+    "r3": {
+        "character": [],
+        "bg": "../../assets/bg/3.png"
+    },
+
+    "r4": {
+        "character": [],
+        "bg": "../../assets/bg/4.png"
+    },
+
+    "r5": {
+        "character": [],
+        "bg": "../../assets/bg/5.png"
+    },
+
+    "r6": {
+        "character": [],
+        "bg": "../../assets/bg/6.png"
+    },
+
+    "r7": {
+        "character": ["eh_aino","lh_columbine","le_flins","lp_harlequino","eg_illugi","le_ineffa","ld_lauma","lg_linnaeus","ld_nefer","lc_sandrone","lh_tartaglia","ea_yagoda"],
+        "bg": "../../assets/bg/7.png"
+    },
+
+    "icons": "../../assets/icon",
+    "logo": "../../assets/logo",
+    "hero": "../../assets/hero",
+    "items": ["60","300","980","1980","3280","6480","moon","1","10","11","12","13","14","15","16","17","18","19","2","20","21","22","23","24","3","4","5","6","7","8","9","mora"]
+}
